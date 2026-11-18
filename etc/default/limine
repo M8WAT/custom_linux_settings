@@ -1,0 +1,2 @@
+ESP_PATH="/boot"
+KERNEL_CMDLINE[default]+="processor.ignore_ppc=1 amd_pstate=guided cryptdevice=PARTUUID=7a2ea4c4-aa7e-4e3b-b9c3-ae949a656e7d:root:allow-discards,no-read-workqueue root=/dev/mapper/root zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs rd.luks.name=2e6bf496-dbf8-4403-a2df-b774797a56f8=home rd.luks.options=2e6bf496-dbf8-4403-a2df-b774797a56f8=discard rd.luks.name=36eee84b-3ab3-4b6a-8d15-e8de7e59ae4a=root rd.luks.options=36eee84b-3ab3-4b6a-8d15-e8de7e59ae4a=discard,no-read-workqueue systemd.tty.term.console=dumb"
