@@ -1,0 +1,19 @@
+# <file system> <dir> <type> <options> <dump> <pass>
+
+# /dev/mapper/root LABEL=omarchy-root-image
+UUID=bf4f4ddd-3d79-48e5-8d3d-87ce1c95d935   /mnt/1tb                btrfs   subvolid=5                                                                  0  0
+UUID=bf4f4ddd-3d79-48e5-8d3d-87ce1c95d935   /                       btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@      0  0
+UUID=bf4f4ddd-3d79-48e5-8d3d-87ce1c95d935   /var/cache/pacman/pkg   btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@pkg   0  0
+UUID=bf4f4ddd-3d79-48e5-8d3d-87ce1c95d935   /var/log                btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@log   0  0
+
+# /dev/nvme1n1p1
+UUID=0799-248C   /boot   vfat   rw,relatime,fmask=0177,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro   0  2
+
+# Btrfs swapfile for system hibernation
+/swap/swapfile   none   swap   defaults,pri=0   0  0
+
+# /dev/mapper/home LABEL=Home
+UUID=2733ecb1-644f-47f6-9c18-fc1f187875cb   /mnt/2tb            btrfs   subvolid=5                                                                       0  0
+UUID=2733ecb1-644f-47f6-9c18-fc1f187875cb   /home               btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home       0  0
+UUID=2733ecb1-644f-47f6-9c18-fc1f187875cb   /var/lib/lemonade   btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@lemonade   0  0
+UUID=2733ecb1-644f-47f6-9c18-fc1f187875cb   /var/lib/libvirt    btrfs   rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@libvirt    0  0
