@@ -1,0 +1,2 @@
+# <name>  <device>  <password>  <options>
+home   UUID=2e6bf496-dbf8-4403-a2df-b774797a56f8   none   luks,keyscript=decrypt_keyctl
